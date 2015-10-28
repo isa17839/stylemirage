@@ -318,6 +318,7 @@ function get_template_directory() {
  * @return string Template directory URI.
  */
 function get_template_directory_uri() {
+    die('2');
 	$template = str_replace( '%2F', '/', rawurlencode( get_template() ) );
 	$theme_root_uri = get_theme_root_uri( $template );
 	$template_dir_uri = "$theme_root_uri/$template";
